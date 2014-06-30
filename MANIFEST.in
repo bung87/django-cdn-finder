@@ -1,0 +1,1 @@
+recursive-include cdn_finder/templatetags *
