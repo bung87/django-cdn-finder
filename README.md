@@ -24,3 +24,9 @@ And then e.g. in a template, you can write::
 No more need to keep such files in the repository!  ``./manage.py
 runserver`` (with ``DEBUG=True``) will download the files as needed, as
 will ``./manage.py collectstatic``.
+
+###Related Projects
+
+ * [django-remote-finder](https://github.com/garrison/django-remote-finder)
+ * [django-bower](https://github.com/nvbn/django-bower)
+
