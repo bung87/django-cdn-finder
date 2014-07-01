@@ -24,11 +24,11 @@ class StaticNode(Node):
             path_str=parse_result.path
             parts=path_str.split('/')
             fname=''.join(parts[-1:])
-            if fname.index('.css')!=-1:
+            if fname.find('.css')!=-1:
                 return 'css/'+fname
-            elif fname.index('.js')!=-1:
+            elif fname.find('.js')!=-1:
                 return 'js/'+fname
-            elif fname.index('.jpg')!=-1 or fname.index('.png')!=-1 or fname.index('.gif')!=-1:
+            elif fname.find('.jpg')!=-1 or fname.find('.png')!=-1 or fname.find('.gif')!=-1:
                 return 'images/'+fname
 
     def url(self, context):
